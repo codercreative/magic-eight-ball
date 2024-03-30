@@ -20,11 +20,10 @@ $(document).ready(function () {
   magic8Ball.askQuestion = function (question) {
     //create a random number
     let randomNumber = Math.random();
-    console.log(randomNumber);
 
     // make the random number between 0 and the number of items in your array
     const randomAnswerArray = randomNumber * this.answerList.length;
-    console.log(randomAnswerArray);
+
     // round down the number to be a whole number
     const randomIndex = Math.floor(randomAnswerArray);
     // use that number to index a random number from the answers array
@@ -36,8 +35,6 @@ $(document).ready(function () {
       "src",
       "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png"
     );
-    console.log(question);
-    console.log(answer);
   };
 
   /*magic8Ball.askQuestion("Will today be a great day?");*/
